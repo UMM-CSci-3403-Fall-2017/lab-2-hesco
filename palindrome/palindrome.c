@@ -32,7 +32,6 @@ char* palindrome(char* str) {
     }
     ++i;
   }
-  free(rev);
 
   if (result) {
     answer = (char*) calloc(4, sizeof(char));
@@ -46,6 +45,6 @@ char* palindrome(char* str) {
     answer[1] = 'o';
     answer[2] = '\0';
   }
-
+free(rev);
   return answer;
 }
